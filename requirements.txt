@@ -2,3 +2,8 @@ pyautogui>=0.9.54
 opencv-python>=4.8.1.78
 numpy>=1.26.0
 Pillow>=10.0.1
+# VideoChat相关依赖（如果可用）
+# videochat  # 需要根据实际情况安装
+# torch>=2.0.0  # 可选，如果需要深度学习功能
+# torchvision>=0.15.0  # 可选
+# transformers>=4.30.0  # 可选
