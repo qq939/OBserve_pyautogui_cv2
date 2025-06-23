@@ -1,4 +1,11 @@
-# Referances - vediochat
+# Referances - RealChar
+该开源项目支持接入各种大模型 API，如 GPT 3.5/4、Claude 2、Whisper Speech2Text、ElevenLabs Text2Speech 等。用户可以直接与角色进行语音对话或选择文字聊天模式，并且可以自己添加新的角色来进行对话。虽然没有明确提到摄像头功能，但结合相关大模型和语音技术，可实现较为丰富的实时语音、文字聊天交互。
+
+
+# Referances - alloy-voice-assistant
+http://github.com/svpino/alloy-voice-assistant/blob/main/assistant.py
+
+# Referances - vediochat（不可用）
 ## 导入必要的库
 from videochat import VideoChatModel, VideoProcessor
 
