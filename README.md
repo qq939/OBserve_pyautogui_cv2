@@ -1,3 +1,30 @@
+# Referances - vediochat
+## 导入必要的库
+from videochat import VideoChatModel, VideoProcessor
+
+## 初始化模型
+model = VideoChatModel.from_pretrained("videochat-base")
+processor = VideoProcessor()
+
+## 加载视频文件
+video_path = "path/to/your/video.mp4"
+video_frames = processor.load_video(video_path, max_frames=100)  # 限制最大帧数
+
+## 准备问题（文本输入）
+user_question = "视频中发生了什么？"
+
+## 进行多模态推理
+response = model.generate_response(
+    video=video_frames,
+    question=user_question,
+    max_length=512,
+    temperature=0.7
+)
+
+## 打印AI回复
+print("AI回答:", response)
+
+
 # 屏幕录制和截图工具
 
 使用 PyAutoGUI 和 OpenCV 实现的屏幕录制工具，支持录制5分钟视频并提取指定分钟的截图。
